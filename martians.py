@@ -1,6 +1,6 @@
-def find_cargo():
+def find_boxes():
     total_weight = 713
-    cargo_weights = [0, 0, 0]
+    boxes_weights = [0, 0, 0]
     kilometer_marks = [0, 0, 0]
 
     while True:
@@ -10,10 +10,10 @@ def find_cargo():
             kilometer_marks[i] = int(input(f"Box {i + 1}: "))
 
         for i in range(3):
-            if cargo_weights[i] == 0 or kilometer_marks[i] == 0:
-                cargo_weights[i] = int(input(f"Enter the weight for Box {i + 1}: "))
+            if boxes_weights[i] == 0 or kilometer_marks[i] == 0:
+                boxes_weights[i] = int(input(f"Enter the weight for Box {i + 1}: "))
 
-        if sum(cargo_weights) == total_weight:
+        if sum(boxes_weights) == total_weight:
             print("\nCongratulations! You found all the boxes.")
             break
         else:
