@@ -1,5 +1,6 @@
 def find_boxes():
     total_weight = 713
+    #there are 3 boxes, each of them have own weight, and when we sum them, we should total weight
     boxes_weights = [0, 0, 0]
     kilometer_marks = [0, 0, 0]
 
